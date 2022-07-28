@@ -1,0 +1,165 @@
+.main__container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__box {
+  overflow-x: auto;
+}
+
+.table {
+
+  min-width: 728px;
+  margin-bottom: 40px;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  &__body{
+    background-color: white;
+    tr {
+      border-bottom: 1px solid rgba($color: #C8C5D1, $alpha: .5);
+    }
+
+    &-id {
+      color: $font-color-gray;
+    }
+  }
+  &__header{
+    display: table-row-group;
+
+    &-row{
+      th {
+        color: $font-color-gray;
+        font-weight: normal;
+      }
+    }
+  }
+
+  th {
+    text-align: start;
+    padding: 0 0 8px 20px;
+  }
+  .table__body-move {
+    display: flex;
+    line-height: 0;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  width:100%;
+  td {
+    word-wrap: break-word;
+    text-align: start;
+    padding: 20px 0 20px 20px;
+  }
+}
+
+.span__date {
+  margin-right: 7px;
+}
+.span__time {
+  color: $font-color-gray;
+}
+
+.th-btn {
+  font-size: 12px;
+  color: $font-color-gray;
+  transition: color .2s ease;
+
+  text-align: start;
+  & svg {
+    transition: transform .2s ease;
+  }
+  &:hover {
+    color: $font-color;
+  }
+}
+
+.is-active{
+  color: $font-color-purpl;
+}
+
+
+.main__title {
+  margin-bottom: 26px;
+}
+
+.list__contacts-item {
+  width: 16px;
+  height: 16px;
+}
+
+.change__btn {
+  margin-right: 5px;
+}
+
+.change__btn,
+.cancel__btn {
+  display: flex;
+  align-items: center;
+}
+
+.change__btn {
+  transition: color .2s ease;
+  &:hover {
+    color: $btn-color-hover;
+  }
+  &:active {
+    color: $btn-color-active;
+  }
+}
+
+.cancel__btn {
+  transition: color .2s ease;
+  &:hover {
+    color: $font-color-orange;
+  }
+}
+
+.add__client {
+  background-image: url('../img/add-client.svg');
+  background-position: 26px center;
+  background-repeat: no-repeat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  padding:13px 27px 13px 58px;
+  margin: 0 auto;
+  align-self: center;
+
+  transition-property: color, background-color;
+  transition-timing-function: ease;
+  transition-duration: .2s;
+
+  &:hover {
+    color: white;
+    background-color: $btn-color-hover;
+  }
+
+  &:active {
+    color: white;
+    background-color: $btn-color-active;
+  }
+}
+
+.contacts__link {
+
+  &:hover svg .pth-hover {
+    transition: fill .2s ease;
+  }
+
+  &:hover svg .pth-hover {
+    fill: $btn-color-active;
+  }
+}
+
+.add__user-save-error {
+  text-align: center;
+  .error-desc {
+    display: none;
+    color: $font-color-orange;
+    margin-bottom: 9px;
+    margin-top: 0;
+  }
+}

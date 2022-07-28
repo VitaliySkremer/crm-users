@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif, 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0;
+  margin: 0;
+  background: #F5F5F5;
+  min-width: 320px;
+}
+
+a {
+  color: transparent;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-reset {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.h__reset {
+  padding: 0;
+  margin: 0;
+}
+
+.input__reset {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
